@@ -351,6 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823500047}
+  - component: {fileID: 823500048}
   m_Layer: 0
   m_Name: PlayerHolder
   m_TagString: Untagged
@@ -372,6 +373,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &823500048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823500046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35c15bf20d208b4e94b704748587858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+  bulletSpawner: {fileID: 1358711507}
+  bullet: {fileID: 1933028780608198, guid: 3c3a8d7eeb59cf74eaae5ae81bea8560, type: 2}
 --- !u!1 &1358711507
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +426,7 @@ GameObject:
   - component: {fileID: 1954870366}
   - component: {fileID: 1954870365}
   - component: {fileID: 1954870364}
-  - component: {fileID: 1954870363}
+  - component: {fileID: 1954870367}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -433,18 +448,6 @@ Transform:
   m_Father: {fileID: 823500047}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1954870363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1954870361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d35c15bf20d208b4e94b704748587858, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 7
 --- !u!65 &1954870364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -499,3 +502,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1954870361}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1954870367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1954870361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35c15bf20d208b4e94b704748587858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+  bulletSpawner: {fileID: 0}
+  bullet: {fileID: 0}
